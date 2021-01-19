@@ -6,7 +6,7 @@ const app = express()
 const authRoute = require('./Routes/auth');
 const postRoute = require('./Routes/posts');
 const mongoose = require('mongoose')
-
+console.log(process.env.DATABASE_URL)
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 const conn = mongoose.connection;
 conn.on('open', () => console.log("Connected to database"))

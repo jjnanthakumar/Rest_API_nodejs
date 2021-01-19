@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://127.0.0.1:3000/api/users/posts
+GET https://nandy-simple-restapi.herokuapp.com/api/users/posts
 auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1YjI3YmVlZWQxODRhOTAxZmJkMzQiLCJpYXQiOjE2MTEwNDQ1Mzh9.s05b5o8f_2QWdJIce8_K0Rud1QC_ZwGndqsJ1Rf1ycA
 
 ###
