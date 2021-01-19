@@ -1,5 +1,5 @@
 ###
-POST http://127.0.0.1:3000/api/users/register
+POST https://nandy-simple-restapi.herokuapp.com/api/users/register
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://127.0.0.1:3000/api/users/authenticate
+POST https://nandy-simple-restapi.herokuapp.com/api/users/authenticate
 Content-Type: application/json
 
 {
