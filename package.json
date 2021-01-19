@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.12",
+    "validatorjs": "^3.22.1"
+  },
+  "name": "simple_api",
+  "version": "1.0.0",
+  "description": "Api using node.js and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Nanthakumar J J",
+  "license": "ISC"
+}

@@ -1,0 +1,49 @@
+###
+POST http://127.0.0.1:3000/api/users/register
+Content-Type: application/json
+
+{
+    "name":"Nanthakumar J",
+    "email":"jjnanthakumar477@gmail.com",
+    "password":"nspqsnp"
+}
+
+###
+POST http://127.0.0.1:3000/api/users/authenticate
+Content-Type: application/json
+
+{
+    "email":"jjnanthakumar477@gmail.com",
+    "password":"nspqsnp"
+}
+
+###
+GET http://127.0.0.1:3000/api/users/posts
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1YjI3YmVlZWQxODRhOTAxZmJkMzQiLCJpYXQiOjE2MTEwNDQ1Mzh9.s05b5o8f_2QWdJIce8_K0Rud1QC_ZwGndqsJ1Rf1ycA
+
+###
+POST http://127.0.0.1:3000/api/users/posts
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1YjI3YmVlZWQxODRhOTAxZmJkMzQiLCJpYXQiOjE2MTEwNDQ1Mzh9.s05b5o8f_2QWdJIce8_K0Rud1QC_ZwGndqsJ1Rf1ycA
+Content-Type: application/json
+
+{
+    "title":"First post",
+    "description":"Developers life API"
+}
+
+###
+GET http://127.0.0.1:3000/api/users/posts/6006b721b0312524b02888a3
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1YjI3YmVlZWQxODRhOTAxZmJkMzQiLCJpYXQiOjE2MTEwNDQ1Mzh9.s05b5o8f_2QWdJIce8_K0Rud1QC_ZwGndqsJ1Rf1ycA
+
+###
+DELETE  http://127.0.0.1:3000/api/users/posts/6006b0a25844581e7c7bfeb3
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1YjI3YmVlZWQxODRhOTAxZmJkMzQiLCJpYXQiOjE2MTEwNDQ1Mzh9.s05b5o8f_2QWdJIce8_K0Rud1QC_ZwGndqsJ1Rf1ycA
+
+###
+PATCH   http://127.0.0.1:3000/api/users/posts/6006b721b0312524b02888a3
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDA1YjI3YmVlZWQxODRhOTAxZmJkMzQiLCJpYXQiOjE2MTEwNDQ1Mzh9.s05b5o8f_2QWdJIce8_K0Rud1QC_ZwGndqsJ1Rf1ycA
+Content-Type: application/json
+
+{
+    "title":"Developing API"
+}
